@@ -1,17 +1,24 @@
 {
-  "name": "sca-four",
-  "version": "0.0.0",
+  "name": "sca_four",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
+  "version": "0.0.0",
   "type": "module",
-  "dependencies": {
+  "scripts": {
+    "start": "node ./bin/www",
+    "start-watch": "nodemon ./bin/www",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite build && serve dist"
+  },
+  "devDependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "nodemon": "^3.1.0",
+    "pug": "2.0.0-beta11",
+    "vite": "^5.2.0"
   }
 }
